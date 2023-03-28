@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Expenses Tracker</title>
+  </head>
+  <body>
+    <h1>Expenses</h1>
+    <table>
+      <tr>
+        <th>Description</th>
+        <th>Amount</th>
+        <th>Date</th>
+      </tr>
+      {% for expense in expenses %}
+      <tr>
+        <td>{{ expense[0] }}</td>
+        <td>{{ expense[1] }}</td>
+        <td>{{ expense[2] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
